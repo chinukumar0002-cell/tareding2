@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradePro - Trading Platform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #08111f;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: #0c192b;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #29e6a0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      padding: 90px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+      background: linear-gradient(135deg, #0b192c, #102b3c);
+    }
+
+    .hero-content {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 58px);
+      line-height: 1.15;
+      margin: 15px 0;
+    }
+
+    .hero h1 span {
+      color: #29e6a0;
+    }
+
+    .hero p {
+      color: #b8c6d8;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #29e6a0;
+      color: #08111f;
+      padding: 13px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px 8px 5px 0;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid #29e6a0;
+      color: #29e6a0;
+    }
+
+    .chart {
+      flex: 1;
+      min-width: 280px;
+      background: #0c192b;
+      padding: 25px;
+      border-radius: 18px;
+      border: 1px solid #24394c;
+    }
+
+    .chart h3 {
+      margin-bottom: 15px;
+    }
+
+    .bars {
+      height: 180px;
+      display: flex;
+      align-items: end;
+      gap: 8px;
+      border-bottom: 1px solid #35485a;
+    }
+
+    .bar {
+      flex: 1;
+      border-radius: 4px 4px 0 0;
+      background: #29e6a0;
+    }
+
+    .bar:nth-child(even) {
+      background: #ff657a;
+    }
+
+    section {
+      padding: 65px 8%;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      color: #aab9cb;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      text-align: left;
+    }
+
+    .card {
+      background: #101f32;
+      border: 1px solid #24394c;
+      border-radius: 14px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      color: #29e6a0;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #b8c6d8;
+    }
+
+    .cta {
+      background: #102b3c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #aab9cb;
+      background: #0c192b;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav a {
+        margin-left: 8px;
+        font-size: 13px;
+      }
+
+      .hero {
+        padding: 55px 6%;
+      }
+
+      section {
+        padding: 45px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">TradePro</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#strategy">Strategy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-content">
+        <p>📈 LEARN • ANALYZE • PRACTICE</p>
+        <h1>Trade Smarter.<br><span>Learn Better.</span></h1>
+        <p>
+          Trading concepts, market analysis tools,
+          strategy testing aur risk management ko
+          ek hi jagah samjhein.
+        </p>
+        <a href="#features" class="btn">Explore Features</a>
+        <a href="#contact" class="btn btn-outline">Get Started</a>
+      </div>
+
+      <div class="chart">
+        <h3>Market Chart Preview</h3>
+        <p style="color:#29e6a0">Sample illustration — live market data nahi</p>
+        <div class="bars">
+          <div class="bar" style="height:35%"></div>
+          <div class="bar" style="height:50%"></div>
+          <div class="bar" style="height:40%"></div>
+          <div class="bar" style="height:65%"></div>
+          <div class="bar" style="height:55%"></div>
+          <div class="bar" style="height:78%"></div>
+          <div class="bar" style="height:68%"></div>
+          <div class="bar" style="height:90%"></div>
+          <div class="bar" style="height:75%"></div>
+          <div class="bar" style="height:98%"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="features">
+      <h2>Our Features</h2>
+      <p class="subtitle">Trading seekhne aur strategies test karne ke tools.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>📊 Market Analysis</h3>
+          <p>Charts, trends aur technical indicators ko samjhein.</p>
+        </div>
+        <div class="card">
+          <h3>⚙️ Strategy Testing</h3>
+          <p>Historical data par apni trading strategy test karein.</p>
+        </div>
+        <div class="card">
+          <h3>🛡️ Risk Management</h3>
+          <p>Stop loss, position sizing aur risk ke baare mein seekhein.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="strategy">
+      <h2>Build Your Trading Knowledge</h2>
+      <p class="subtitle">
+        Pehle seekhein, phir demo trading aur backtesting se practice karein.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <h3>EMA Strategy</h3>
+          <p>Moving averages ke crossover ko samjhein.</p>
+        </div>
+        <div class="card">
+          <h3>RSI Indicator</h3>
+          <p>Momentum aur market conditions ka analysis seekhein.</p>
+        </div>
+        <div class="card">
+          <h3>Backtesting</h3>
+          <p>Past results ko evaluate karein. Past performance future returns ki guarantee nahi hai.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contact">
+      <h2>Start Learning Today</h2>
+      <p class="subtitle">
+        Trading education aur strategy practice ki shuruaat karein.
+      </p>
+      <a href="https://www.tradingview.com/" target="_blank"
+         rel="noopener noreferrer" class="btn">
+        Open TradingView
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 TradePro. All rights reserved.</p>
+    <p>Disclaimer: Educational content only. Trading involves financial risk.</p>
+  </footer>
+
+</body>
+</html>
